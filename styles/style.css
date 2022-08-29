@@ -130,7 +130,7 @@ body {
 .accueil {
   position: absolute;
   top: 50%;
-  transform: translate(300%, 0%); /*position horizontal vertical */
+  transform: translate(250%, 0%); /*position horizontal vertical */
   font-size: 15px; /* taille */
   color: #006699;
 }
@@ -146,7 +146,7 @@ body {
 .suivant {
   position: absolute;
   top: 50%;
-  transform: translate(460%, 0%); /*position horizontal vertical */
+  transform: translate(410%, 0%); /*position horizontal vertical */
   font-size: 15px; /* taille */
   color: #006699;
 }
