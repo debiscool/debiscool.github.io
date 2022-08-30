@@ -114,7 +114,9 @@ body {
 .retour {
   position: absolute;
   top: 50%;
-  transform: translate(100%, 0%); /*position horizontal vertical */
+  margin-left: 47px; /* 200px espace exterieur autour de l'element*/
+  margin-right:0px;
+  top: 12px; /*position haut, bas */
   font-size: 15px; /* taille */
   color: #006699;
 }
@@ -130,7 +132,9 @@ body {
 .accueil {
   position: absolute;
   top: 50%;
-  transform: translate(300%, 0%); /*position horizontal vertical */
+  margin-left: 146px; /* 200px espace exterieur autour de l'element*/
+  margin-right:0px;
+  top: 12px; /*position haut, bas */
   font-size: 15px; /* taille */
   color: #006699;
 }
@@ -146,7 +150,9 @@ body {
 .suivant {
   position: absolute;
   top: 50%;
-  transform: translate(460%, 0%); /*position horizontal vertical */
+  margin-left: 243px; /* 200px espace exterieur autour de l'element*/
+  top: 12px; /*position haut, bas */
+  margin-right:0px;
   font-size: 15px; /* taille */
   color: #006699;
 }
