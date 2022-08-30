@@ -148,8 +148,8 @@ body {
 .suivant {
   position: absolute;
   margin-left: 243px; /* 200px espace exterieur autour de l'element*/
-  top: 12px; /*position haut, bas */
   margin-right:0px;
+  top: 12px; /*position haut, bas */
   font-size: 15px; /* taille */
   color: #006699;
 }
