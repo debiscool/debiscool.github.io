@@ -113,7 +113,6 @@ body {
 
 .retour {
   position: absolute;
-  top: 50%;
   margin-left: 47px; /* 200px espace exterieur autour de l'element*/
   margin-right:0px;
   top: 12px; /*position haut, bas */
@@ -131,7 +130,6 @@ body {
 
 .accueil {
   position: absolute;
-  top: 50%;
   margin-left: 146px; /* 200px espace exterieur autour de l'element*/
   margin-right:0px;
   top: 12px; /*position haut, bas */
@@ -149,7 +147,6 @@ body {
 
 .suivant {
   position: absolute;
-  top: 50%;
   margin-left: 243px; /* 200px espace exterieur autour de l'element*/
   top: 12px; /*position haut, bas */
   margin-right:0px;
