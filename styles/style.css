@@ -113,7 +113,7 @@ body {
 
 .retour {
   position: absolute;
-  margin-left: 47px; /* 200px espace exterieur autour de l'element*/
+  margin-left: 45px; /* 200px espace exterieur autour de l'element*/
   margin-right:0px;
   top: 12px; /*position haut, bas */
   font-size: 15px; /* taille */
