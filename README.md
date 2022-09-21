@@ -6,4 +6,4 @@ Informer sur le logiel libre
 
 Faire un choix de distribution GNU/Linux
 
-Rassembler les informations pour installer Debian avec le bureau Xfce.
+Rassembler les informations pour installer et utiliser Debian avec le bureau Xfce.
