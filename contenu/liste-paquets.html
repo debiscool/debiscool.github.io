@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <meta charset="utf-8">
+       <title>Debian bureau Xfce liste paquets</title>
+       <link href="../styles/style.css" rel="stylesheet" type="text/css">
+       <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <h1>GLICD</h1>
+  <h2></h2>
+  <body>
+       <img src="../images/tux.png" title="Tux la  mascotte officielle du noyau Linux" />
+       <!--<script src=<div class="box1">"scripts/main.js"></script>-->
+  </body> 
+  <p><span class="bold-titre">Liste des paquets à ajouter.</span></p>
+  <p>En plus des paquets qui ont été ajoutés lors de l'installation, installer la liste des paquets ci-dessous.<br />
+     Cette liste n'est pas exhaustive et ce n'est pas le but. Elle permet d'avoir des outils supplémentaires.<br />
+     Chaque paquet doit être installé un par un, en suivant le mémo<a class="lienpage" href="ajout-paquets.html"> Ajout de paquets.</a>  
+ </p>
+  <ul>
+     <li><span class="bold-titre1">Multimédia :</span></li> 
+        <ul>
+	   <li> <strong>parole </strong> (installé par défaut) : Lecteur de média pour l’environnement de bureau Xfce, ajouter :</li>
+	       <ul>	   
+                  <li><strong>gvfs</strong></li>
+	          <li><strong>gvfs-backends</strong></li>
+	          <li><strong>libdvdnav4</strong></li>
+               </ul>
+           <li><strong>clementine</strong> : lecteur musical multiplateforme, permet aussi d'utiliser le lecteur CD</li>
+           <li><strong>pulseaudio</strong> (installé par défaut) : Contôle de volume </li>
+	  <li><strong>xfburn</strong> (installé par défaut) : graveur de cd et dvd</li>
+           <li><strong>vlc</strong> : lecteur multimédia, à utiliser aussi pour la lecture de cd et de dvd, puis ajouter :</li>
+	       <ul><li><strong>dvgrab</strong></li></ul>
+           <li><strong>xcfa</strong> : outil pour extraire le contenu de CD audio et convertir les fichiers audio, puis ajouter :</li>
+	      <ul>
+		 <li><strong>cdparanoia</strong></li>
+		 <li><strong>cd-discid</strong></li>
+		 <li><strong>xcfa-dbg</strong></li>       
+	      </ul>
+	    <li><strong>webcamoid</strong> : application de capture de webcam</li>
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Bureautique :</span></li>
+	<ul>
+	   <li>le pack libre office doit être déjà installé</li>
+	   <li><strong>pdfarranger</strong> : application pour modifier les fichiers pdf</li>
+	   <li><strong>printer-driver-cups-pdf</strong> : outil pour imprimer en pdf. La première impression en pdf va créer<br />
+	       un fichier pdf dans le Gestionnaire de fichiers</li>
+	</ul>
+  </ul>	  
+  <ul> 
+     <li><span class="bold-titre1">Accessoires :</span></li>	   
+	<ul>	
+	   <li><strong>xfce4-screenshooter</strong> (Capture d'écran) : utilitaire pour réaliser des captures d'écran.</li>
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Graphisme :</span></li>
+	<ul>        
+	   <li><strong>gimp</strong> : éditeur d'images perfectionné</li>
+	   <li><strong>karbon</strong> : application de dessin</li> 
+	   <li><strong>evince</strong> (Visionneur de documents) : visualisateur simple de documents, exemple des pdf</li>
+	   <li><strong>ristretto</strong> : visualisateur d’images, exemple des photos</li>
+           <li><strong>eog</strong> (Visionneur d'images) : programme de visualisation d'images, possibilité d'imprimer l'image, exemple la photo</li>
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Connecter une source externe :</span></li>
+	<ul>
+	   <li><strong>shotwell</strong> : permet d'importer des photos, images et vidéos depuis un disque dur ou 
+									un appareil photo ou un smartphone, etc.</li>
+	   <li><strong>simple-scan</strong> : application pour scanner</li>
+           <li><strong>cups</strong> (installé par défaut) : le système commun d'impression </li>
+	   <li><strong>jmtpfs</strong> : permet de connecter un appareil android, exemple le smartphone</li>
+	</ul>
+  </ul> 
+  <ul>
+     <li><span class="bold-titre1">Pare feu :</span></li>
+	<ul>
+	   <li><strong>ufw</strong> : programme pour la gestion du pare-feu, puis ajouter :</li>
+	      <ul><li><strong>gufw</strong> : l'interface graphique de ufw</li></ul> 
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Internet : </span></li>	 
+ 	<ul>
+	   <li><strong>firefox-esr</strong> (installé par défaut) : navigateur web puissant</li>
+	   <li><strong>thunderbird</strong> : application de messagerie (Email), puis ajouter :</li>	
+	     <ul><li><strong>thunderbird-l10n-fr</strong> : paquet de langue française</li></ul>
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Système : </span></li>
+	<ul>
+	   <li><strong>gparted</strong> : gestionnaire graphique pour partitionner les périphériques, exemple : disque dur ou clé usb</li>
+	   <li><strong>hardinfo</strong> :  application qui affiche des informations sur le matériel et le système d'exploitation</li>
+	</ul>
+     </ul>
+  <ul>
+     <li><span class="bold-titre1">Wifi et Bluetooth :</span></li>
+	<ul>
+	   <li><strong>wireless-tools</strong> : outils pour les extensions sans fil (exemple : clé usb wifi), puis ajouter :</li>
+	      <ul><li><strong>libiw30</strong></li></ul>
+	   <li><strong>firmware-iwlwifi</strong> (non free) : pour carte wifi intégrée, puis ajouter :</li>
+	      <ul><li><strong>initramfs-tools</strong></li></ul>
+	   <li><strong>wireless-regdb</strong> : pour carte wifi</li>
+	   <li><strong>bluez</strong> :  permet d'utiliser les périphériques Bluetooth, puis ajouter :</li>
+	      <ul>
+		 <li><strong>bluetooth</strong></li>
+		 <li><strong>blueman</strong> : interface graphique de gestion du bluetooth</li>
+	      </ul> 
+	   <li><strong>firmware-realtek</strong> (non free) : firmware pour wifi et bluetooth</li>
+	</ul>
+  </ul>
+  <ul>
+     <li><span class="bold-titre1">Webcam intégré et Webcam usb :</span></li>
+	<ul>
+	   <li><strong>v4l-utils</strong> : fournit les utilitaires</li>
+	</ul>
+  </ul>
+<div class="container">
+  <div class="box3">
+    <a href="ajout-paquets.html" alt="Retour"><img class="box3" title="Retour" src="../images/tux.png" alt="Tux" /></a>
+    <div class="retour">Retour</div>
+   </div>
+   <div class="box4">
+    <a href="../index.html" alt="Accueil"><img class="box4" title="Accueil" src="../images/tux.png" alt="Tux" /></a>
+    <div class="accueil">Accueil</div>
+  </div>
+   <div class="box5">
+     <a href="fichiers.html" alt="Suivant"><img class="box5" title="Suivant" src="../images/tux.png" alt="Tux" /></a>
+     <div class="suivant">Suivant</div>
+   </div>
+</div>
+  <p><a href="merci.html">Merci</a></p>
+<!--nota-->
+</html>
+
+
