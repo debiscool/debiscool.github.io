@@ -4,12 +4,12 @@ html {
 }
 
 h1,h2 {
-  font-size: 40px;
-  text-align: center;
+  font-size: 40px; /* taille du titre */
+  text-align: left; /* center */
 }
 
 h1,h2 {
-  margin: 0;
+  margin: 10px;
   padding: 1px 0;
   color: black; /* #00539F */
   text-shadow: 2px 2px 1px black; /* ombre horizontal vertical flou */
@@ -21,7 +21,7 @@ img {
   /*margin: 0 auto; */ /* 0 auto marge */
   margin-left: auto; /* 200px espace exterieur autour de l'element*/
   margin-right:auto;
-  width: 20%; /* 25% agrandir ou diminuer */
+  width: 17%; /* 25% agrandir ou diminuer */
   padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
 }
 
@@ -55,13 +55,6 @@ li {
   color: #006699;
 }
 
-
-/* gras des textes */
-.bold-texte {
-  font-weight: bolder; /* gras */
-  text-shadow: 0px 0px 0px black; /* ombre horizontal vertical flou  */
-}
-
 html {
   background-color: #00539F; /* #00539F contour bleu*/
 }
@@ -75,7 +68,7 @@ body {
   border: 5px solid black; /* 5 */
 }
 
-/* image selection des logiciels */
+/* image alignée avec <p> */
 .box1 { 
   display: block;
   /*margin: 0 auto; */ /* 0 auto marge */
@@ -85,15 +78,129 @@ body {
   padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
 }
 
-/* image sources.list */
+/* image alignée avec <p> bureau xfce0 */
+.box1bis { 
+  display: block;
+  /*margin: 0 auto; */ /* 0 auto marge */
+  margin-left: auto; /* 200px espace exterieur autour de l'element*/
+  margin-right:auto;
+  width: 825px; /* 700px auto agrandir ou diminuer l'image */
+  height: 38px; /* hauteur */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+
+/* image mise-à-jour et ajout-paquets  */
 .box2 {
   display: block;
   /*margin: 0 auto; */ /* 0 auto marge */
-  margin-left: 50px; /* 200px espace exterieur autour de l'element*/
-  margin-right:auto;
-  width: 600px; /* auto agrandir ou diminuer l'image */
+  margin-left: 132px; /* 50px espace exterieur autour de l'element*/
+  margin-right:0px;
+  width: 500px; /* auto agrandir ou diminuer l'image */
   padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
 }
+
+/* image dans sources-apt avec <li> */
+.box6 {
+  display: block;
+  /*margin-left: 50px; /* 200px espace exterieur autour de l'element*/
+  margin-left: 235px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 200px; /* auto agrandir ou diminuer l'image */
+  /*height: 200px; /* hauteur */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+ /* image dans sources-apt et ajout-paquet */
+.box7 { 
+ /* display: block;
+  /*margin: 0 auto; */ /* 0 auto marge */
+  margin-left: 35px; /* 200px espace exterieur autour de l'element*/
+  margin-right:auto;
+  width: 700px; /* 700px auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+ /* image dans sources-apt avec <li> */
+.box8 { 
+  margin-left: 125px; /* 200px espace exterieur autour de l'element*/
+  margin-right:auto;
+  width: 500px; /* 700px auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* encadre sources.list */
+.container2 {
+  position: relative;
+  width: 90%; /* largeur 100px*/
+  height: 160px; /* hauteur 100px*/
+  border: 1px solid black;
+}
+
+/* position sources.list */
+.source { 
+  position: absolute;
+  top: -10px; /*position haut, bas */
+  margin-left: 15px; /* 200px espace exterieur autour de l'element*/
+  margin-right: auto;
+  float: left;
+}
+
+/* image dans fichier */
+.box9 {
+  display: block;
+  margin-left: 190px; /* 50px espace exterieur autour de l'element*/
+  margin-right:0px;
+  width: 450px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* image dans fichier */
+.box10 {
+  display: block;
+  margin-left: 290px; /* 50px espace exterieur autour de l'element*/
+  margin-right:0px;
+  width: 250px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* image dans bureauxfce */
+.box11 {
+  display: block;
+  margin-left: 320px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 200px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* image dans bureauxfce */
+.box12 {
+  display: block;
+  margin-left: 180px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 400px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* image dans bureauxfce */
+.box13 {
+  display: block;
+  margin-left: 270px; /* 50px espace exterieur autour de l'element*/  
+  margin-right:0px;
+  width: 220px; /* auto agrandir ou diminuer l'image */
+  padding: 0px 0px 0px 0px; /* espace en haut et bas proche du contenu haut droite bas gauche*/
+}
+
+/* espace paragraphe */
+.espace1 {
+  margin-top:60px;
+}
+
+/* espace paragraphe avant bandeau */
+.espace2 {
+  margin-top:30px;
+}
+
 
 /* bandeau de fin de page */
 .container {
@@ -101,6 +208,7 @@ body {
   width: 100%; /* largeur 100px*/
   height: 50px; /* hauteur 100px*/
   border: 1px solid black;
+  margin-top: 30px; /* position haut et bas */
 }
 
 .box3 { 
@@ -157,7 +265,7 @@ body {
 
 /* style lien de page interne */
 .lienpage {
-text-decoration: none; /* Les liens ne seront plus soulignés */
-color: ; /* red Les liens seront en rouge au lieu de bleu */
-font-style: ; /* italic Les liens seront en italique */
+  text-decoration: none; /* Les liens ne seront plus soulignés */
+  color: ; /* red Les liens seront en rouge au lieu de bleu */
+  font-style: ; /* italic Les liens seront en italique */
 }
