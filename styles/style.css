@@ -132,7 +132,7 @@ body {
 /* encadre sources.list */
 .container2 {
   position: relative;
-  width: 90%; /* largeur 100px*/
+  width: 100%; /* largeur 100px*/
   height: 160px; /* hauteur 100px*/
   border: 1px solid black;
 }
