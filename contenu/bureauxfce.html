@@ -12,20 +12,13 @@
     <img src="../images/tux.png" title="Tux est un manchot, mascotte officielle du noyau Linux">
     <script src="scripts/main.js"></script>
   </body>
-  <p><span class="bold-titre">Environnement de bureau Xfce.</span><a href="https://xfce.org/" target="_blank"> Le site Xfce.</a></p>
+  <p><span class="bold-titre">Environnement du bureau Xfce.</span><a href="https://xfce.org/" target="_blank"> Le site Xfce.</a></p>
   <p>Xfce est un environnement de bureau léger pour les systèmes d’exploitation de type UNIX. Il est peu gourmand en ressources 
 							système, tout en étant visuellement attrayant et convivial.</p>
-  <p>La souris :<br />
-     Clic gauche (simple clic) : correspond à un appui court sur le bouton gauche de la souris.<br />
-     Double clic : correspond à 2 appuis courts rapides sur le bouton gauche de la souris.<br />
-     Clic droit : correspond à un appui court sur le bouton droit de la souris.<br />
-     Entre ces 2 boutons, il peut se trouver une roue appelé molette, elle permet le défilement de la page.<br /> 
-     Pour s'exercer au clic, 2 liens :<a href="https://adn56.net/pres/bases/exercices/index.html" target="_blank"> Clic gauche ici</a>
-                        ou<a href="https://lescahiersdudebutant.arpinux.org/exercices/" target="_blank"> Clic gauche ici</a></p>
   <p>Après l'installation, le bureau est configuré comme ci-dessous.<br />
      Mais il peut être configuré de la façon que l'on souhaite.</p>
    <p><img class="box1" src="../images/xfce/xfce.png" title="xfce" /></p>
-  <p class="espace1" id="xfce"><span class="bold-titre1">Description du tableau de bord 1, celui du haut.</p>
+  <p class="espace1" id="tableau1"><span class="bold-titre1">Description du tableau de bord 1, celui du haut.</p>
   <p><img class="box1bis" src="../images/xfce/xfce0.png" title="xfce0" /></p> 
     <ul>
        <li>En haut à gauche de l'écran : Clic gauche > Applications<br />
@@ -118,7 +111,7 @@
 	      <p><img class="box12" src="../images/xfce/xfce51.png" title="xfce51" /></p>	  
 	      <li>Pour fermer cette fenêtre, 1 Clic gauche en dehors de cette fenêtre, comme vu plus haut.</li>	  
 	  </ul>
-	  <li><p>Toujours sur le tableau de bord 1 mais à droite en haut de l'écran.<br />
+	  <li><p id="espace">Toujours sur le tableau de bord 1 mais à droite en haut de l'écran.<br />
 	         Les 4 carrés gris correspondent à des espaces de travail différents.</p></li> 
 	  <ul><li>Celui qui est le plus foncé est celui qui est acif.</li>
 	        <p><img class="box12" src="../images/xfce/xfce22.png" title="xfce22" /></p>
@@ -136,7 +129,7 @@
 		    Pour avoir accès à l'application cliquer sur son onglet.<br />
 		    Cliquer plusieurs fois sur les onglets pour comprendre comment tout cela fonctionne.</li>
 	    </ul>
-	    <li><p>Les périphériques réseaux et les connexions sont gérés par :<a href="https://wiki.gnome.org/Apps" target="_blank"> NetworkManager</a><br />
+	    <li><p id="réseaux">Les périphériques réseaux et les connexions sont gérés par :<a href="https://wiki.gnome.org/Apps" target="_blank"> NetworkManager</a><br />
 	           Exemple : Internet, Wifi, etc...</p></li> 
 	    <ul><li>Placer le pointeur de la souris comme sur l'image ci-dessous<br />
                     La notification "Connexion au réseau Ethernet « Wired connection 1 » active" veut dire :<br />
@@ -162,7 +155,7 @@
 	            de modifier les connexions > modifier entre autre le nom de cette connexion, etc...</li>
 	        <p><img class="box13" src="../images/xfce/xfce52.png" title="xfce52" /></p>
 	     </ul>
-	     <li>Positionner le pointeur de la souris sur l'icône du haut parleur<br />
+	     <li id="son">Positionner le pointeur de la souris sur l'icône du haut parleur<br />
                  Une notification apparaît en indiquant un volume à 28% (dans cet exemple)<br />
 	         Le son est géré par le serveur<a href="https://www.freedesktop.org/wiki/Software/PulseAudio/" target="_blank"> PulseAudio</a></li>
            <p><img class="box9" src="../images/xfce/xfce23.png" title="xfce23" /></p>
@@ -194,14 +187,14 @@
 		 <p><img class="box12" src="../images/xfce/xfce67.png" title="xfce67" /></p>
 		 <li>Fermer le contrôle du volume : Clic gauche > petite croix en haut à droite comme sur l'image ci-dessus.</li>	    
   	     </ul>
-	     <li><p>Positionner le pointeur de la souris sur l'icône batterie.<br />
+	     <li id="alim"><p>Positionner le pointeur de la souris sur l'icône batterie.<br />
 	            Une notification apparaît, Ordinateur</p></li>
 	     <p><img class="box9" src="../images/xfce/xfce26.png" title="xfce26" /></p>
 	     <ul><li>Clic gauche sur l'icône.</li>
 		 <p><img class="box12" src="../images/xfce/xfce27.png" title="xfce27" /></p>
 		 <li>Cette application est le gestionnaire d'alimentation du PC.</li>
 	     </ul>
-	     <li><p>Positionner le pointeur de la souris sur l'icône sonnerie.<br />
+	     <li id="notifications"><p>Positionner le pointeur de la souris sur l'icône sonnerie.<br />
                     Une notification apparaît, Notifications</p></li>
              <p><img class="box9" src="../images/xfce/xfce28.png" title="xfce28" /></p>
 	     <ul><li>Clic gauche sur l'icône.</li>
@@ -211,14 +204,14 @@
 	     <li><p>Clic gauche sur l'icône de la date, permet d'afficher le calendrier<br />
 	            Clic droit sur l'icône de la date > Propriétés, permet de paramètrer la date et l'heure.</p></li>
 	     <p><img class="box9" src="../images/xfce/xfce30.png" title="xfce30" /></p>
-	     <li>Clic gauche sur "debian", une fenêtre apparaît.</li> 
+	     <li id="plus">Clic gauche sur "debian", une fenêtre apparaît.</li> 
 	     <p><img class="box9" src="../images/xfce/xfce31.png" title="xfce31" /></p>
 	     <ul><li>Cette solution, permet aussi d'éteindre, de déconnecter, de mettre en veille, etc...</li>
 	     </ul>
   	     <li><p>Rappel, pour faire disparaître le menu déroulant :<br />
 	            Positionner le pointeur de la souris en dehors de ce menu déroulant et faire un Clic gauche.</p></li>
        </ul>  
-  <p class="espace1" id="xfce"><span class="bold-titre1">Description du tableau de bord 2, celui du bas.</p>
+  <p class="espace1" id="tableau2"><span class="bold-titre1">Description du tableau de bord 2, celui du bas.</p>
     <ul>
       <p>Sur ce tableau de bord 2, il y a 6 raccourcis.</p>
       <p><img class="box9" src="../images/xfce/xfce19.png" title="xfce19" /></p>
@@ -231,13 +224,13 @@
       <li>le sixième : Accès aux fichiers qui se trouvent dans Gestionnaire de fichiers</li>
       <p><img class="box13" src="../images/xfce/xfce34.png" title="xfce34" /></p>
     </ul>
-  <p class="espace1" id="xfce"><span class="bold-titre1">Ajout de raccourcis sur le bureau.</p>
+  <p class="espace1" id="ajoutrac"><span class="bold-titre1">Ajout de raccourcis sur le bureau.</p>
        <p>Sur le bureau se trouve des icônes (raccourcis).<br />
 	      Ils permettent de lancer directement les applications depuis le bureau.<br />
 	      On peut en rajouter ou en supprimer.</p>
        <p><img class="box1" src="../images/xfce/xfce.png" title="xfce" /></p>
        <ul><li>Ajouter un raccourci sur le bureau pour lancer une application, exemple "Parole" :<br />
-	       Aller dans, Applications > Multimédia > Placer le pointeur de la souris sur "Lecteur multimédia Parole"</li>
+	       Aller dans, Applications > Multimédia > Placer le pointeur de la souris sur "Lecteur multimédia Parole".</li>
 	   <p><img class="box9" src="../images/xfce/xfce7.png" title="xfce7" /></p>
 	   <li>Maintenir appuyer le bouton gauche de la souris, faire glisser le pointeur de la souris en dehors du menu déroulant et lâcher.<br />
               (glisser > déposer).</li>
@@ -267,6 +260,9 @@
 	   <p><img class="box9" src="../images/xfce/xfce62.png" title="xfce62" /></p> 
 	   <li><p>Après avoir fait un clic gauche > Marquer exécutable, l'application Parole s'ouvre.<br />
                Fermer le Lecteur Multimédia Parole : Clic gauche > Média (en haut à gauche) > Quitter</p></li>
+        </ul>          
+  <p class="espace1" id="suprac"><span class="bold-titre1">Suppression de raccourcis sur le bureau.</p> 
+        <ul> 
            <li>Supprimer l'icône (raccourci) de cette application du bureau :<br />
 	       Positionner le pointeur de la souris sur l'icône et 1 Clic droit<br />
 	       Puis positionner le pointeur de la souris sur Supprimer et 1 Clic gauche</li>
@@ -275,7 +271,7 @@
                Clic gauche > Supprimer</li>
            <p><img class="box10" src="../images/xfce/xfce64.png" title="xfce64" /></p>
            <li>Vérifier : Le raccourci de l'application "Parole" n'est plus sur le bureau.
-       </ul>
+        </ul>
  <div class="container">
   <div class="box3">
     <a href="sommaire.html" alt="Retour"><img class="box3" title="Retour" src="../images/tux.png" alt="Tux" /></a>
@@ -286,7 +282,7 @@
     <div class="accueil">Accueil</div>
   </div>
   <div class="box5">
-     <a href="sources-apt.html" alt="Suivant"><img class="box5" title="Suivant" src="../images/tux.png" alt="Tux" /></a>
+     <a href="mise-a-jour.html" alt="Suivant"><img class="box5" title="Suivant" src="../images/tux.png" alt="Tux" /></a>
      <div class="suivant">Suivant</div>
    </div>
 </div>
