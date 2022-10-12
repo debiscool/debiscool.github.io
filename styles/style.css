@@ -275,7 +275,7 @@ a:hover {
     color: ;/* #0000FF */
     text-decoration: underline; /* liens soulignés */
     background-color: #FFFF00; /* encadré de couleur jaune */
-    font-weight: bold; /* gras */
+    /*font-weight: bold; /* gras */
     font-style: italic; /* italic Les liens seront en italique */
 }
 
