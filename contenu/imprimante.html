@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Debian bureau Xfce</title>
+    <title>Debian bureau Xfce imprimante</title>
     <link href="../styles/style.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
@@ -12,8 +12,140 @@
     <img src="../images/tux.png" title="Tux est un manchot, mascotte officielle du noyau Linux">
     <script src="scripts/main.js"></script>
   </body>
-   <p><span class="bold-titre">Imprimante.</span></p>
-  <p class="espace2">Page en cours</p>
+  <p id="imprimante"><span class="bold-titre">Imprimante.</span></p>
+  <p>Le système principal d'impression est le Common UNIX Printing System (<strong>CUPS</strong>)<a href="https://www.cups.org/" target="_blank"> Le site ici</a></p>
+  <p>CUPS est le service d'impression par défaut.<br />
+     CUPS détecte automatiquement les imprimantes.<br />
+  <p>Il peut être configuré et contrôlé en utilisant une interface web ou une interface graphique.</p>
+  <ul>   
+     <li>Utiliser une interface web : CUPS est  accessible à "http://localhost:631/admin".</li>
+     <li>Utiliser une interface graphique : CUPS prend en charge une interface utilisateur graphique qui est<br />
+         "system-config-printer"</li>
+  </ul>
+  <p>Pour fonctionner certaines imprimantes multifonctions ont besoin de paquets supplémentaires :<br />
+  <ul>
+    <li>Imprimante HP, ajouter, si besoin, le paquet : <strong>hplip</strong></li>
+    <li>Imprimante Canon, ajouter, si besoin, le paquet : <strong>cups-backend-bjnp</strong> ou télécharger les pilotes sur le site Canon.</li>
+    <li>Imprimante Brother, ajouter, si besoin, le paquet : <strong>printer-driver-brlaser</strong></li>
+    <li>Imprimante Epson, si besoin, télécharger les pilotes sur le site Epson.</li>
+  </ul>
+  <p>Dans ce mémo seule l'interface graphique "system-config-printer" sera détaillée.</li>  
+  <p class="espace2" id="auto"><span class="bold-titre1">Détection automatique de l'imprimante</p>
+  <ul>
+    <li>Connecter l'imprimante au PC via un câble usb et éteindre l'imprimante.</li>
+    <li>Allumer le PC et rester sur la page du bureau Xfce</li>
+    <p><img class="box9" src="../images/xfce/xfce.png" title="xfce"/></p>
+    <li>Allumer l'imprimante la détection automatique commence avec une notifiaction :<br />
+        Configuration de la nouvelle imprimante : Merci de patienter</li>
+    <p><img class="box9" src="../images/imprimante/imprimante01.png" title="imprimante01"/></p>
+    <li>Une nouvelle notification apparaît :<br />
+        L'imprimante a été ajoutée.</li>
+    <p><img class="box9" src="../images/imprimante/imprimante02.png" title="imprimante02"/></p>
+    <li>A la place de <strong>Description</strong>, se trouve le nom de l'imprimante qui a été ajoutée.</li>
+  </ul>
+  <p class="espace1" id="interface"><span class="bold-titre1">Utilisation de l'interface graphique "system-config-printer"</p>
+  <ul>
+    <li>Ouvrir l'interface graphique : Applications > Paramètres > Configuration de l'impression (1 clic gauche)</li>
+    <p><img class="box9" src="../images/xfce/xfce2.png" title="xfce2" /></p>
+    <li id="barremenus">L'application de l'interface graphique s'ouvre.</li>
+      <ul>
+        <ol><p>
+           <li>Barre de menus : Serveur, Imprimante, Voir, Aide et le bouton Déverrouiller - Verrouiller</li>
+           <li>Liste des imprimantes :<br />
+             <ul><li>L'imprimante "Description" qui a été ajoutée.</li>
+                 <li>PDF : Outil pour imprimer en pdf  via le paquet : printer-driver-cups-pdf</li>
+             </ul>
+           <li>Barre d'état</li>
+        </p></ol>
+      </ul>
+    <p><img class="box9" src="../images/imprimante/imprimante05.png" title="imprimante05"/></p>
+    <li id="deverrouiller">Pour modifier les réglages des imprimantes, il faut déverrouiller la boite de dialogue.<br />
+        Placer le pointeur de la souris sur Déverrouiller et clic gauche</li>
+    <p><img class="box9" src="../images/imprimante/imprimante04.png" title="imprimante04"/></p>  
+    <li>Une fenêtre apparaît, demandant le mot de passe pour Root (superutilisateur)</li>
+    <p><img class="box9" src="../images/imprimante/imprimante06.png" title="imprimante06"/></p>
+    <li>Saisir le mot de passe pour Root (superutilisateur) et valider avec Entrée ou cliquer > S'authentifier</li>
+    <p><img class="box9" src="../images/imprimante/imprimante07.png" title="imprimante07"/></p>
+    <li>Les modifications sont possibles puisque la boite de dialogue est déverrouillée.</li>
+    <p><img class="box9" src="../images/imprimante/imprimante08.png" title="imprimante08"/></p>
+    <li id="supprime">Placer le pointeur de la souris sur l'imprimante "Description" et clic droit<br />
+        Une fenêtre apparaît :</li>
+      <ul><li>Propriétés : Faire des modifications, imprimer une page de test, etc.</li>
+          <li>Supprimer l'imprimante</li>
+          <li>Activer ou désactiver l'imprimante</li>
+          <li>Définir par défaut</li>
+          <li>Voir la file d'attente des impressions</li>
+      </li></ul>  
+    <p><img class="box9" src="../images/imprimante/imprimante09.png" title="imprimante09"/></p>
+    <li>Image ci-dessus :<br />
+        "Définir par défaut" est grisé. Cela veut dire que l'imprimante est définie par défaut.<br />
+        Le rond vert avec le V blanc sur l'icône de l'imprimante indique que l'imprimante est définie par défaut.</li>
+    <li><p>Quitter l'application graphique : Serveur > Quitter</p></li>
+  </ul>    
+  <p class="espace1" id="base"><span class="bold-titre1">Paramètres du serveur (pour l'imprimante)</p>
+  <ul>  
+    <li>Placer le pointeur de la souris sur : Serveur > paramètres (clic gauche)</li>
+    <p><img class="box9" src="../images/imprimante/imprimante10.png" title="imprimante10"/></p>
+    <li>Une fenêtre apparaît, demandant le mot de passe pour Root (superutilisateur)</li>
+    <p><img class="box9" src="../images/imprimante/imprimante11.png" title="imprimante11"/></p>
+    <li>Saisir le mot de passe pour Root (superutilisateur) et valider avec Entrée ou cliquer > S'authentifier</li>
+    <p><img class="box9" src="../images/imprimante/imprimante12.png" title="imprimante12"/></p>
+    <li>Une fenêtre apparaît<br />
+        Placer le pointeur de la souris sur "Paramètres avancés du serveur", comme sur l'image ci-dessous<br />
+        Clic gauche, la page complète apparaîtra.</li> 
+    <p><img class="box9" src="../images/imprimante/imprimante14.png" title="imprimante14"/></p>
+    <li>Configurer les paramètres du serveur comme sur l'image ci-dessous.</li>
+    <p id="problemes"><img class="box9" src="../images/imprimante/imprimante13.png" title="imprimante13"/></p> 
+    <li>Nota : Résoudre des problèmes d'impression, l'image ci-dessus, cliquer sur "Problèmes ?" en haut à droite en bleu et suivre les instructions.<br />
+        Ou sur<a class="lienpage" href="#barremenus"> la barre de menus</a>, cliquer sur Aide > Dépannage et suivre les instructions.</li> 
+    <li><p>Quitter les paramètres du serveur : Cliquer > ok</p></li>
+    <li><p>Quitter l'application graphique : Serveur > Quitter</p></li>
+  </ul>
+  <p class="espace1" id="manuellement"><span class="bold-titre1">Ajouter (installer) manuellement une imprimante</p>
+  <ul>
+    <li>Connecter l'imprimante au PC et l'allumer.</li>
+    <li>Avant toute modification, il faut déverrouiller la boite de dialogue,<a class="lienpage" href="#deverrouiller"> voir ci-dessus.</a></li>
+    <li>Placer le pointeur de la souris sur : Serveur > nouveau > imprimante (clic gauche)</li>
+    <p><img class="box9" src="../images/imprimante/imprimante15.png" title="imprimante15"/></p>  
+    <li>Une fenêtre apparaît, choisisser le périphérique</li>
+    <p><img class="box9" src="../images/imprimante/imprimante16.png" title="imprimante16"/></p>
+    <li>Dans cette exemple, le choix est port série #1 (image ci-dessus)</br>
+        Si l'imprimante est connectée avec un câble usb, il faudra choisir :<br />
+        Sous, Périphérique : usb<br />
+        Sous, Connexion : usb</li>
+    <li>Puis, Cliquer > Suivant<br />
+        Attendre, le système recherche des pilotes.</li>
+    <p><img class="box9" src="../images/imprimante/imprimante17.png" title="imprimante17"/></p>
+    <li>Une fenêtre apparaît, choisisser l'imprimante<br />
+        Dans cette exemple : HP Deskjet 2721e<br />
+        Dans un premier temps sélectionner le fabricant ici : HP<br />
+        Faire défiler la liste soit avec la molette de la souris ou en plaçant le pointeur de la souris comme sur l'image
+                                              ci-dessous et faire glisser la souris.</li>
+    <li>Cliquer > Suivant</li>
+    <p><img class="box9" src="../images/imprimante/imprimante18.png" title="imprimante18"/></p>
+    <li>Choisir le modèle de l'imprimante :<br />
+        Pour l'imprimante HP Deskjet 2721e, le modèle choisi est : Deskjet 2700<br />
+        Ne chercher pas "2721e": Dans cette exemple, il faut choisir la série "2700"<br />
+        Cliquer > Suivant</li>
+    <p><img class="box9" src="../images/imprimante/imprimante19.png" title="imprimante19"/></p>
+    <li>Une fenêtre apparaît avec la nouvelle description de l'imprimante<br />
+        Changer la description si besoin<br />
+        Cliquer > Appliquer</li>
+    <p><img class="box9" src="../images/imprimante/imprimante20.png" title="imprimante20"/></p>
+    <li>Une fenêtre peut apparaître, demandant le mot de passe pour Root (superutilisateur)<br />
+        Si non, passer l'étape</li>
+    <p><img class="box9" src="../images/imprimante/imprimante21.png" title="imprimante21"/></p>
+    <li>Saisir le mot de passe pour Root (superutilisateur) et valider avec Entrée ou cliquer > S'authentifier</li>
+    <p><img class="box9" src="../images/imprimante/imprimante22.png" title="imprimante22"/></p>
+    <li>Une fenêtre apparaît : Voulez-vous imprimer une page d'essai?<br />
+        Faire un choix, ici : Annuler<br />
+        Nota, l'imprimante doit être allumée pour imprimer une page de test...</li>
+    <p><img class="box9" src="../images/imprimante/imprimante23.png" title="imprimante23"/></p>
+    <li>L'imprimante HP Deskjet 2721e est sous le nom HP-Deskjet-2700<br />
+        De plus l'imprimante est définie par défaut (rond vert avec le V blanc)</li>
+    <p><img class="box9" src="../images/imprimante/imprimante24.png" title="imprimante24"/></p> 
+    <li><p>Quitter l'application graphique : Serveur > Quitter</p></li>
+  </ul>
 <div class="container">
   <div class="box3">
     <a href="sommaire.html" alt="Retour"><img class="box3" title="Retour" src="../images/tux.png" alt="Tux" /></a>
